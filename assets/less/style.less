@@ -1,0 +1,46 @@
+/* 
+1.0 Base
+    1.1 Header
+        1.1.1 Top Menu
+        1.1.2 Header Menu
+    1.2 Footer
+        1.2.1 Footer Top
+        1.2.2 Footer Bottom
+3.0 Content
+    3.1 Home Page Content
+        3.1.1 Content Page 1
+        3.1.2 Cotent Page 2
+    3.2 Blog Content
+        3.2.1 Item Blog Content
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,500&family=Fira+Sans:wght@200;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+@borders : 1px solid #efefef;
+.font_gara(@size,@weight,@line,@letter,@color){
+    font-family: 'Cormorant Garamond';
+    font-size: @size;
+    letter-spacing: @letter;
+    line-height: @line;
+    color: @color;
+    font-weight: @weight;
+
+}
+.font_sans(@size,@weight,@line,@letter,@color){
+    font-family: 'Fira Sans';
+    font-size: @size;
+    letter-spacing: @letter;
+    line-height: @line;
+    color: @color;
+    font-weight: @weight;
+
+}
+@import './base/_header.less';
+@import './base/_footer.less';
+@import './content/_home_page_content.less';
+@import './content/_blog_content.less';
+@import './common/configskin/_skin.less';
+@import '_reponsive.less';
+

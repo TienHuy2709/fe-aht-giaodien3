@@ -1,0 +1,154 @@
+@color-white : #fff;
+/*header*/
+.header{
+	position: relative;
+	img.header__menu__bg{
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	&__menu{
+		width: 100%;
+		a img{
+			position: absolute;
+			top: 29px;
+			left: 98px;
+		}
+
+		&__icon{
+			position: absolute;
+			top: 41px;
+			right: 109px;
+			i{
+				font-size: 25px;
+				cursor: pointer;
+			}
+
+			&__cart{
+				padding-right: 45px;
+				position: relative;
+				color: #ece7e1;
+				.icon__sup{
+					position: absolute;
+					left: 16px;
+					top: -5px;
+					background-color: #fff;
+					border-radius: 10px;
+					color: black;
+					display: inline-block;
+					font-size: 12px;
+					line-height: 1;
+					padding: 3px 6px;
+					text-align: center;
+					vertical-align: middle;
+					white-space: nowrap;
+				}
+
+			}
+
+			&--white{
+				color: @color-white;
+			}
+
+		}
+
+	}
+
+	&__slider{
+		position: absolute;
+		top: 32.7%;
+		left: 18.85%;
+		display: flex;
+		width: 81.25%;
+		&__heading{
+			letter-spacing: 5px;
+			position: relative;
+			width: 76.923%;
+			padding: 13px 17px 16px 17px;
+			span{
+				.font_sans(24px,600,32px,12px,#696969);
+			}
+
+			h1{
+				width: 75%;
+				margin-top: 35px;
+				padding-left: 1px;
+				height: auto;
+				.font_gara(90px,600,100px,35px,#333333);
+				font-style: italic;
+				text-transform: uppercase;
+				
+			}
+
+			button{
+				margin-top: 45px;
+				margin-left: -5px;
+				width: 200px;
+				height: 50px;
+				background-color: #333333;
+				border: none;
+				text-transform: uppercase;
+				text-align: center;
+				text-decoration: none;
+				.font_sans(16px,700,24px,2px,#ffffff);
+			}
+
+			button:hover{
+				border: none;
+				background-color: #968c7f;
+				color: @color-white;
+				cursor:pointer;
+				transition: 0.5s ;
+			}
+
+		}
+
+		&__social{
+			list-style: none;
+			text-align: right;
+			width: 23.007%;
+			margin-top: 5.56%;
+			margin-right: 6.4%;
+			li{
+				padding-top:15px;
+				margin-bottom: -6px;
+				a{
+					text-decoration: none;
+					.font_gara(24px,100,30px,2.5px,#ffffff);
+					text-align: right;
+				}
+
+				.action{
+					color: @color-white;
+				}
+
+				a:after{
+					content: "";
+					position: absolute;
+					margin-top:16px;
+					right: 0;
+					width: 0;
+					height: 1px;
+					background-color: black;
+					transition: .25s;
+				}
+
+				a:hover:after{
+					color: @color-white;
+					width: 70px;
+					height: 1px;
+				}
+
+			}
+
+			/*li:last-child{
+					padding-top:0px;
+			}
+*/
+		}
+
+	}
+
+}
+
