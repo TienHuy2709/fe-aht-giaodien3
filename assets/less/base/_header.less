@@ -54,11 +54,119 @@
 		}
 
 	}
+	
+	#nav-aside{
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		max-width: 300px;
+		height: 100%;
+		background-color: @color-white;
+		padding: 80px 20px;
+		overflow: auto;
+		z-index: 99 ;
+		/* for real browsers */
+		box-shadow: 0 0 0 100vmax rgba(0,0,0,.3);
+		/*pointer-events: none;*/
+		ul{
+			list-style: none;
+			li{
+				a{
+					color: black;
+					font-size: 20px;
+					line-height: 40px;
+					text-transform: uppercase;
+					font-weight: 700;
+				}
+
+			}
+
+		}
+
+		.nav-aside-close{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+			text-align: center;
+			background-color: transparent;
+			color: #212631;
+			border: none;
+			font-size: 22px;
+			border-radius: 50%;
+			padding: 0;
+			cursor: pointer;
+		}
+		.post{
+			margin-bottom: 40px;
+			width: 100%;
+			float: left;
+			a.post-img{
+				width: 90px;
+				float: left;
+				margin-right: 15px;
+				img{
+					width: 100%;
+				}
+			}
+			a.post-img:hover{
+				border:1px solid #b19d81;
+			}
+			.post-title{
+				margin-bottom: 0px;
+				font-size: 18px;
+			}
+		}
+		.section-row{
+			margin-top: 40px;
+			.nav-aside-social{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				li{
+					display: inline-block;
+					a{
+						display: block;
+						width: 30px;
+						height: 30px;
+						line-height: 30px;
+						text-align: center;
+						background-color: #212631;
+						color: #FFF;
+						border-radius: 2px;
+						margin-right: 5px;
+						-webkit-transition: 0.2s opacity;
+						transition: 0.2s opacity;
+						font-weight: 600;
+						text-decoration: none;
+						cursor: pointer;
+
+					}
+					a:hover{
+						background-color: #b19d81;
+					}
+				}
+				
+			}
+		}
+
+	}
+
+	.nav-active{
+		display: block;
+	}
+
+	.nav-no-active{
+		display: none;
+	}
 
 	&__slider{
 		position: absolute;
 		top: 32.7%;
-		left: 18.85%;
+		left: 18.77%;
 		display: flex;
 		width: 81.25%;
 		&__heading{
@@ -73,6 +181,7 @@
 			h1{
 				width: 75%;
 				margin-top: 35px;
+				margin-bottom: 66px;
 				padding-left: 1px;
 				height: auto;
 				.font_gara(90px,600,100px,35px,#333333);
@@ -81,20 +190,18 @@
 				
 			}
 
-			button{
-				margin-top: 45px;
-				margin-left: -5px;
-				width: 200px;
-				height: 50px;
+			a{
+				margin-left: -2px;
 				background-color: #333333;
 				border: none;
 				text-transform: uppercase;
 				text-align: center;
 				text-decoration: none;
+				padding: 15px 30px 15px 30px;
 				.font_sans(16px,700,24px,2px,#ffffff);
 			}
 
-			button:hover{
+			a:hover{
 				border: none;
 				background-color: #968c7f;
 				color: @color-white;
@@ -145,7 +252,7 @@
 			/*li:last-child{
 					padding-top:0px;
 			}
-*/
+			*/
 		}
 
 	}
