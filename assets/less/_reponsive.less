@@ -143,35 +143,6 @@
 	}
 
 	@media(min-width: 600px) and (max-width: 767px) {
-		.header{
-			&__slider{
-				position: absolute;
-				top: 20%;
-				&__heading{		
-					span{
-						font-size: 15px;
-						letter-spacing: 8px;
-						line-height: 32px;
-					}
-
-					h1{
-						margin-top: 6px;
-						font-size: 35px;
-						transition: 0.2s;
-						width: 93%;
-						letter-spacing: 15px;
-					}
-
-					a{
-						margin-top: 5px;
-					}
-
-				}
-
-			}
-
-		}
-
 		&__slider__social li a {
 			font-size: 20px;
 		}
@@ -180,6 +151,17 @@
 
 	@media(min-width: 600px)and(max-width: 766px) {
 		.header{
+			&__menu{
+				&__icon{
+					&__cart{
+						padding-right: 30px;
+
+					}
+
+				}
+
+			}
+
 			&__slider{
 				position: absolute;
 				top: 30%;
@@ -195,7 +177,7 @@
 
 					h1{
 						margin-top: -35px;
-						margin-bottom: -30px;
+						margin-bottom: -10px;
 						font-size: 24px;
 						transition: 0.2s;
 						width: 100%;
@@ -225,13 +207,18 @@
 				a img{
 					position: absolute;
 					top: 10px;
-					left: 98px;
+					left: 20px;
 				}
 
 				&__icon{
 					position: absolute;
 					top: 30px;
 					right: 15px;
+					&__cart{
+						padding-right: 30px;
+
+					}
+
 				}
 
 			}
@@ -283,6 +270,22 @@
 				button{
 					margin-left: 10px;
 				}
+				&__detail{
+					ul{
+						margin-left: 4rem;
+						text-align: center;
+						li{
+							padding-right: 5px;
+							margin-top: 90px;
+							a{
+								letter-spacing: 0px;
+							}
+
+						}
+
+					}
+
+				}
 
 			}
 
@@ -290,22 +293,24 @@
 
 	}
 
-	@media(min-width: 320px) and (max-width: 599px) {
+	@media(min-width: 320px) and (max-width: 766px) {
 		.footer{
 			&__menu{
 				padding-top: 30px;
+				text-align: center;
 				&__logo{
-					margin-left: -20px;
+					margin-left: 0px;
 				}
 
 				&__detail{
-					padding-right: 5px;
+					padding-right: 15px;
 					margin-top: 70px;
 					ul{
 						margin-left: 0px;
 						li{
-							padding-right: 5px;
-							margin-top: 54px;
+							margin-right: -10px;
+							margin-left: 10px;
+							margin-top: 0px;
 						}
 
 					}
@@ -313,8 +318,8 @@
 				}
 
 				button{
-					margin-top: 80px;
-					margin-left: -20px;
+					margin-top: 30px;
+					margin-left: 0px;
 					letter-spacing: 1px;
 					font-size: 11px;
 					width: 80px;
@@ -330,12 +335,22 @@
 			}
 
 			&__contact{
+				justify-content: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				&__detail{
+					margin-left: 0px;
+					width: auto;
+					text-align: center;
+				}
+
 				&__social{
 					ul{
 						list-style: none;
-						float: right;
-						margin-right: -42px;
-						margin-top: -10px;
+						float: left;
+						margin-right: 0px;
+						margin-top: 0px;
+						margin-left: 15%;
 						li{
 							padding-right: 4px;
 							display: inline-block;
@@ -390,6 +405,7 @@
 						h3{
 							font-size: 60px;
 							padding-bottom: 0px;
+							padding-top: 10%;
 
 						}
 
@@ -415,11 +431,14 @@
 	@media(max-width: 1199px){
 		.content{
 			&__intro{
-				.row{
-					width: 100%;
-					margin: 0px;	
-				}
+				&__big{
+					
+					p{
+						padding: 30px;
+						margin: 0px;
+					}
 
+				}
 				&__detail{
 					width: 100%;
 					padding-left: 0px;
@@ -437,6 +456,7 @@
 			}
 
 			&__banner{
+				padding: 5px 15px 0px 15px;
 				&__top__1, &__top__2, &__top__3, &__bottom__1, &__bottom__2, &__bottom__3{
 					img{
 						width: 100%;
@@ -449,12 +469,70 @@
 					margin-top: 40px;
 				}
 
+				&__top__2{
+					.detail{
+						padding-top: 0px;
+						right: 8%;
+						width: auto;
+						span.detail--top{
+							font-size: 12px;
+							line-height: normal;
+							letter-spacing: 2px;
+							margin-right: 0px;
+						}
+
+						h3{
+							font-size: 70px;
+							padding: 20px;
+						}
+
+						p{
+							display: none;
+							/*margin-bottom: 1rem;
+							a{
+								font-size: 18px;
+								letter-spacing: normal;
+								margin-left: 0px;
+								line-height: 32px;
+							}*/
+
+						}
+
+						span.detail--bottom{
+							font-size: 14px;
+							width: auto;
+							height: auto;
+							line-height: normal;
+						}
+
+					}
+
+				}
+
+				&__top__3{
+					img{
+						padding-left: 0px;
+					}
+
+					span{
+						display: none;
+					}
+
+				}
+
 				&__bottom__1, &__bottom__2, &__bottom__3{
 					margin-bottom: 40px;
 				}
+
 				&__bottom__3{
 					img{
 						padding-left: 0px;
+					}
+					.detail{
+						h3{
+							line-height: 48px;
+						}
+
 					}
 					
 				}
@@ -462,26 +540,43 @@
 			}
 
 			&__items{
-				.items{
-					width: 100%;
-					padding-left: 20%;
-				}
+				padding: 0px 15px 0px 15px;
 
 				&__cap{
-					padding:0px;
+					h3{
+						margin-left: 0px;
+					}
+
+				}
+				.items{
+					/*justify-content: center;*/
 				}
 
 				&__detail{
-					margin: 0px 15px 0px 15px;
-					margin-top: 27px;
-				}
+					min-width: auto;
+					height: auto;
+					img{
+						width: 100%;
+						height: auto;
+					}
+					margin: 27px 0px 0px 0px;
+					padding: 0px 15px 0px 15px;
+					.img-prev{
+						left: 15px;
+					}
 
-				.items-clear-right{
-					margin-right: 15px;
+					.img-next{
+						right: 15px;
+					}
+
 				}
 
 				.items-clear-left{
-					margin-left: 15px;
+					margin-left: 0px;
+				}
+
+				.items-clear-right{
+					margin-right: 0px;
 				}
 
 			}
@@ -490,7 +585,77 @@
 
 	}
 
-	@media(min-width: 750px) and (max-width: 999px){
+	.button--buy(@left,@width,@font-size){
+		width: 100%;
+		left: @left;
+		bottom: 60px;
+		button{
+			width: @width;
+			min-width: auto;
+			font-size: @font-size;
+			padding: 5px;
+		}
+
+	}
+
+	@media(min-width: 768px) and (max-width: 1199px){
+		.content{
+			&__items{
+				&__detail{
+					&__buy{
+						.button--buy(15px,38%,12px);
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	@media(min-width: 535px) and (max-width: 767px){
+		.content{
+			&__items{
+				&__detail{
+					&__buy{
+						.button--buy(15px,44%,12px);
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	@media(min-width: 360px) and (max-width: 534px){
+		.content{
+			&__items{
+				&__detail{
+					&__buy{
+						padding: 0px 15px 0px 15px;
+						.button--buy(0px,100%,5px);
+						button{
+							letter-spacing: normal;
+							line-height: normal;
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	@media(min-width: 768px) and (max-width: 999px){
 		.content .content__intro__detail p{
 			padding:0px;
 			margin:0px;
@@ -502,18 +667,19 @@
 			&__banner{
 				&__top__2{
 					.detail{
-						width: 180px;
+						width: auto;
 						position: absolute;
-						top: 8.5%;
+						top: 17.5%;
 						right: 8%;
 						h3{
 							font-size: 60px;
-							padding-bottom: 0px;
+							padding: 15px;
 
 						}
 
 						p 
 						{
+							display: none;
 							margin-bottom: 0px;
 							a{
 								font-size: 16px;
@@ -522,13 +688,16 @@
 						}
 
 					}
+
 				}
+
 			}
 
 		}
 
 	}
-	@media(min-width: 660px) and (max-width: 749px){
+
+	@media(min-width: 660px) and (max-width: 767px){
 		.content .content__intro__detail p{
 			padding:0px;
 			margin:0px;
@@ -540,32 +709,37 @@
 			&__banner{
 				&__top__2{
 					.detail{
-						width: 180px;
+						width: auto;
 						position: absolute;
-						top: 5.5%;
-						right: 5%;
+						top: 17.5%;
+						right: 8%;
 						h3{
-							font-size: 40px;
-							padding-bottom: 0px;
-							line-height: 12px;
+							font-size: 80px;
+							padding-bottom: 50px 20px 50px 20px;
+							line-height: 32px;
 
 						}
 
 						p 
 						{
-							margin-bottom: -1.5rem;
+							display: block;
+							margin-bottom: 1rem;
 							a{
 								font-size: 16px;
 							}
 
 						}
+
 						span{
 							font-size: 14px;
 						}
 
 					}
+
 				}
+
 			}
+
 			&__intro{
 				&__big p{
 
@@ -577,7 +751,18 @@
 		}
 
 	}
+
 	@media(min-width: 360px) and (max-width: 659px){
+		.content{
+			&__intro{
+				.row{
+					margin: 0px;
+				}
+
+			}
+
+		}
+
 		.content .content__intro__detail p{
 			padding:0px;
 			margin:0px;
@@ -592,103 +777,82 @@
 					padding-left: 0px;
 					padding-right: 0px;
 				}
+
 			}
+
 			&__banner{
 				&__top__2{
 					.detail{
-						width: 180px;
+						width: auto;
 						position: absolute;
-						top: 6.5%;
-						right: 5%;
+						top: 17.5%;
+						right: 10%;
 						h3{
-							font-size: 50px;
-							padding-bottom: 0px;
-							line-height: 12px;
+							font-size: 60px;
+							padding: 30px 20px 30px 20px;
+							line-height: 32px;
 
 						}
 
 						p 
 						{
-							display: none;
+							display: block;
 							a{
 								font-size: 16px;
 							}
 
 						}
+
 						span{
-							display: none;
+							display: block;
 							font-size: 14px;
 						}
 
 					}
+
 				}
+
 				&__top__3{
 					.detail{
 						span{
 							display: none;
 						}
+
 					}
+
 				}
-			}
-			&__intro{
 
 			}
 
 		}
 
 	}
+
 	@media(max-width: 570px){
 		.content{
 			&__banner{
 				&__top__2{
 					.detail{
-						width: 180px;
-						position: absolute;
-						top: 0%;
-						right: 0%;
+						right: 10%;
+						span.detail--top{
+							display: none;
+						}
+
 						h3{
-							font-size: 50px;
+							font-size: 60px;
 							line-height: 12px;
+							padding: 50px 20px 50px 20px;
 
 						}
 
-					}					
-
-				}
-				&__bottom__3{
-					.detail{
-						h3{
-							font-size: 18px;
-						}
 						p{
 							display: none;
 						}
-					}
-				}
-
-			}
-
-		}
-
-	}
-	@media(max-width: 570px){
-		.content{
-			&__banner{
-				&__top__2{
-					.detail{
-						width: 180px;
-						position: absolute;
-						top: -5%;
-						right: -5%;
-						h3{
-							font-size: 30px;
-							line-height: 12px;
-
-						}
 
 					}					
 
 				}
+
 				&__top__3{
 					.detail{			
 						h3{
@@ -701,20 +865,37 @@
 					}					
 
 				}
+
+				&__bottom__3{
+					.detail{
+						h3{
+							font-size: 18px;
+						}
+						p{
+							display: none;
+						}
+
+					}
+
+				}
+
 			}
+
 		}
+
 	}
+
 	@media(max-width: 380px){
 		.content{
 			&__banner{
 				&__top__2{
 					.detail{
-						width: 180px;
+						width: auto;
 						position: absolute;
-						top: -30%;
-						right: -20%;
+						top: 17.5%;
+						right: 8%;
 						h3{
-							font-size: 30px;
+							font-size: 50px;
 							line-height: 12px;
 
 						}
@@ -737,7 +918,38 @@
 						h3{
 							font-size: 16px;
 						}
+
 					}
+
+				}
+
+			}
+
+			&__items{
+				&__detail{
+					&__buy{
+						width: 100%;
+
+						left: 0px;
+						bottom: 38px;
+						padding: 0px 15px 0px 15px;
+						button{
+							width: 100%;
+							min-width: auto;
+							font-size: 10px;
+							padding: 5px;
+							letter-spacing: normal;
+							height: 20px;
+							line-height: normal;
+
+						}
+
+						span{
+							display: none;
+						}
+
+					}
+
 				}
 
 			}
@@ -750,17 +962,39 @@
 	@media(max-width: 1199px){
 		.content{
 			&__blog{
+				&__details{
+					/*justify-content: center;*/
+				}
+
 				&__detail{
+					padding: 0px 15px 0px 15px;
 					margin-top: 30px;
-					margin-left: 15px
+					margin-left: 0px;
+					margin-right: 0px;
+					max-width: 100%;
+					height: auto;
+					a img{
+						width: 100%;
+						height: auto;
+					}
+
+					p{
+						overflow: hidden;
+						text-overflow: ellipsis;
+						line-height: normal;
+						-webkit-line-clamp: 2;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+					}
+
 				}
 
 				&__detail:first-child{
-					margin-left: 15px;
+					margin-left: 0px;
 				}
 
 				&__detail:last-child{
-					margin-left: 15px;
+					margin-right: 0px;
 				}
 
 			}
@@ -798,11 +1032,40 @@
 					}
 
 					img:last-child{
-						margin-right: 30px;
+						margin-right: 15px;
+						margin-top: 0px;
 					}
 
 					img:first-child{
-						margin-left: 30px;
+						margin-left: 15px;
+						margin-top: 0px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	@media(min-width: 768px) and (max-width: 990px){
+		.content{
+			&__blog{
+				&__detail{
+					&__cap{
+						p{
+							a{
+							overflow: hidden;
+							text-overflow: ellipsis;
+							line-height: normal;
+							-webkit-line-clamp: 3;
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							}
+
+						}
+
 					}
 
 				}
@@ -814,17 +1077,12 @@
 	}
 	@media(max-width: 380px){
 		.content{
-			&__items{
-				.items{
-					width: 100%;
-					padding-left: 15%;
-				}
-			}
 			&__blog{
 
 				&__detail{
 					margin-right: 15px;
 				}
+
 				&__detail:last-child{
 					margin-right: 15px;
 				}
@@ -832,5 +1090,6 @@
 			}
 
 		}
+		
 	}
 	/* end reponsive blog */
